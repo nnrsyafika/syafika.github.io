@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: #F9F1F0;
+            margin: 0;
+            padding: 20px;
+        }
+		header {
+		background: #FADCD9;
+		color: #F79489;
+		padding: 20px 0;
+		text-align: center;
+		font-family: Times new roman,serif;
+		}
+
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		nav ul li {
+			display: inline;
+			margin: 0 15px;
+		}
+
+		nav ul li a {
+			color: #F79489;
+			text-decoration: none;
+		}
+        .container {
+			display: flex;
+            max-width: 800px;
+            margin: auto;
+            background: #F8AFA6;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #F79489;
+			}
+		h2 {
+			text-align: left;
+			color: 	#FADCD9;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+		
+
+		footer {
+		text-align: center;
+		padding: 10px 0;
+		background: #FADCD9;
+		color: #F79489;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i>WELCOME TO MY GALLERY</i></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="education.html">Education</a></li>
+				<li><a href="gallery.html">Gallery</a></li> 
+            </ul>
+        </nav>
+    </header>
+<br>
+
+    <div class="container">
+        <h2>My family</h2>
+        <div class="gallery">
+			<img src="kakak ashraf.jpg" alt="Image 1">
+			<img src="family.jpg" alt="Image 2">
+            <img src="sibling.jpg" alt="Image 3">
+        </div>
+    </div>
+<br>	
+	    <div class="container">
+        <h2>My friends</h2>
+        <div class="gallery">
+            <img src="teha nana.jpg" alt="Image 1">
+            <img src="farah.jpg" alt="Image 2">
+            <img src="nini.jpg" alt="Image 3">
+            <img src="5b.jpg" alt="Image 4">
+            <img src="meks.jpg" alt="Image 5">
+            <img src="intern.jpg" alt="Image 6">
+        </div>
+    </div>	
+<br>
+    <div class="container">
+        <h2>Random photos</h2>
+        <div class="gallery">
+            <img src="pantai.jpg" alt="Image 1">
+            <img src="pelangi.jpg" alt="Image 2">
+            <img src="tokong cina.jpg" alt="Image 3">
+            <img src="pantai (2).jpg" alt="Image 4">
+            <img src="air terjun.jpg" alt="Image 5">
+            <img src="2503.jpg" alt="Image 6">
+        </div>
+    </div>
+<br>
+    <footer>
+        <p><i><b>&copy; 2025 Made for IM318. All rights reserved.</b></i></p>
+    </footer>
+</body>
+</html>
